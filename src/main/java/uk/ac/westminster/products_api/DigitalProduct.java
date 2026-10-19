@@ -1,4 +1,29 @@
+
 package uk.ac.westminster.products_api;
 
-public class DigitalProduct {
+public class DigitalProduct extends Product {
+
+    private String downloadUrl;
+    private double fileSizeMB;
+
+    // No-argument constructor
+    public DigitalProduct() {
+    }
+
+    // Full argument constructor
+    public DigitalProduct(Long id, String name, double price,
+                          String downloadUrl, double fileSizeMB) {
+        super(id, name, price);
+
+        this.downloadUrl = downloadUrl;
+        this.fileSizeMB = fileSizeMB;
+    }
+
+    public String getDownloadUrl() {
+        return downloadUrl;
+    }
+
+    public double getFileSizeMB() {
+        return fileSizeMB;
+    }
 }
