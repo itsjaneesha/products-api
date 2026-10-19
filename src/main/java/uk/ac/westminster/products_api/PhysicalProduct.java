@@ -1,9 +1,5 @@
 
 package uk.ac.westminster.products_api;
-
-// A PhysicalProduct IS-A Product because it is a type of product.
-// A ShoppingCart is not a Product; it contains products (HAS-A).
-
 public class PhysicalProduct extends Product {
 
     private double weightKg;
